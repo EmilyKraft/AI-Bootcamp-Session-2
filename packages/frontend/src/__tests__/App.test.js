@@ -113,7 +113,7 @@ describe('App Component', () => {
     await waitFor(() => {
       expect(screen.queryByLabelText('Edit item text')).not.toBeInTheDocument();
     });
-  });
+  }); 
 
   test('marks item as completed and active', async () => {
     const user = userEvent.setup();
